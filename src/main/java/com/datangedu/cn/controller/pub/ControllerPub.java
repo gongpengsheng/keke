@@ -18,10 +18,11 @@ import com.datang.hrb.util.ImgCodeUtil;
 
 @Controller
 public class ControllerPub {
+	//网页跳转注解
 	@RequestMapping("/redirect")
 	public String page(HttpServletRequest request) {
 		String url = request.getParameter("page");
-		System.out.println("tiaozhuan" + url);
+		System.out.println("跳转到" + url);
 		return url;
 	}
 
